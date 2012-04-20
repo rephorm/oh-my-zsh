@@ -32,7 +32,7 @@ zstyle ':completion::complete:*' cache-path "$HOME/.zcache"
 
 # Case-insensitive (all), partial-word, and then substring completion.
 if zstyle -t ':omz:completion:*' case-sensitive; then
-  zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+  zstyle ':completion:*' matcher-list '' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
   setopt CASE_GLOB
 else
   zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
