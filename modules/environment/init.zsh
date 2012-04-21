@@ -26,12 +26,6 @@ unsetopt CHECK_JOBS       # Don't report on jobs when shell exit.
 typeset -gU cdpath fpath mailpath manpath path
 typeset -gUT INFOPATH infopath
 
-cdpath=(
-  $HOME
-  $HOME/Developer
-  $cdpath
-)
-
 infopath=(
   $HOME/.tilde/share/info
   $HOME/.tilde/opt/share/info
